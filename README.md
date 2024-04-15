@@ -20,6 +20,8 @@ SW 인제양성 4기
     * xml_to_test.py
       * xml 파일을 test 파일로 변환
     * yolotrain.py
-      * yolo 사용하여 학습 및 예측
+      * yolo 사용하여 학습
     * label.py
       * 라벨링 데이터 확인
+    * yolo_predict.py
+      * 데이터 예측
