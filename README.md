@@ -10,7 +10,7 @@ SW 인제양성 4기
   
 * ## private project
   * ### 개인 프로젝트
-    * ~~cctv.py~~
+    * ~~cctv.py~~ 실패
     * data_label.py 
       * 기존 라벨링 데이터 축소
     * date_check.py
@@ -21,3 +21,5 @@ SW 인제양성 4기
       * xml 파일을 test 파일로 변환
     * yolotrain.py
       * yolo 사용하여 학습 및 예측
+    * label.py
+      * 라벨링 데이터 확인
