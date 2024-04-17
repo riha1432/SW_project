@@ -1,9 +1,13 @@
 import os
 import sys
 import subprocess
+import inspect
 
 def pip_install(package):
-    subprocess.check_call(["pip", "install", package])
+    try:
+        subprocess.check_call([sys.executable, "-m","pip", "install", package])
+    except:
+        return
 
 pip_install('numpy')
 pip_install('ultralytics')
@@ -21,7 +25,7 @@ except:
 
 from git import Repo
 now_path = os.getcwd().replace('\\','/') + '/yolo_date'
-clone = 'https://github.com/riha1432/sw-sql.git'
+clone = 'https://github.com/riha1432/DataSet.git'
 
 print('종료하지 마시요')
 repo = Repo.clone_from(clone, now_path)
