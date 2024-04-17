@@ -21,7 +21,7 @@ except:
 
 from git import Repo
 now_path = os.getcwd().replace('\\','/') + '/yolo_date'
-clone = 'https://github.com/riha1432/DataSet.git'
+clone = 'https://github.com/riha1432/sw-sql.git'
 
 print('종료하지 마시요')
 repo = Repo.clone_from(clone, now_path)

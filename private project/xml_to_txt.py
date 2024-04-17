@@ -1,6 +1,8 @@
 import xml.etree.ElementTree as ET
 import time
 import cv2
+import os
+
 dic = {'Battery':0, 'Lighter':1, 'Aerosol':2, 'SupplymentaryBattery':3}
 
 id_num = 0

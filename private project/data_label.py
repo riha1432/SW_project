@@ -1,11 +1,16 @@
+import os
+
 dic = {'Battery':0,'Knife':1,'Lighter':2,'SupplymentaryBattery':3,'Scissors':4,
        'Screwdriver':5,'Spanner':6,'Saw':7,'SmartPhone':8,'HDD':9,
        'Aerosol':10,'TabletPC':11}
 
 lab = {'0':0, '2': 1, '10': 2, '3': 3}
 
+#파일 저장 위치 지정
+default = 'test/labels/'
+
 for i in range(1, 1557):
-    file = 'test/labels/a (' + str(i) + ').txt'
+    file = default + 'a (' + str(i) + ').txt'
     data = None
     try:
         fr = open(file, 'r')
